@@ -1,4 +1,4 @@
-const mongoose = require('moongoose')
+const mongoose = require('mongoose')
 
 const todoSchema = new mongoose.Schema({
     content: {
