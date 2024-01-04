@@ -1,4 +1,4 @@
-const mongoose = require('moongoose')
+const mongoose = require('mongoose')
 
 const todoSchema = new mongoose.Schema({
     content: {
@@ -7,7 +7,7 @@ const todoSchema = new mongoose.Schema({
     },
     completed: {
         type: Boolean,
-        required: false
+        default: false
     }, createdBy: {
         type: mongoose.Schema.Types.objectId,
         Ref: "User"
